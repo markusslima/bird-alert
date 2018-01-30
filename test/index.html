@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    	<link rel="stylesheet" href="animate.css">
+
+    	<title>Hello, world!</title>
+    	<style type="text/css">
+    		/**
+			 * Mensagens de alerta
+			 */
+			#birdAlert {
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				z-index: 1000;
+			}
+
+			.container-birdAlert {
+				width: 350px;
+				background: #fff;
+				box-shadow: 1px 1px 7px rgba(100,100,100,0.6);
+				padding: 15px 20px;
+				margin-bottom: 10px;
+			}
+
+			.container-birdAlert .close-birdAlert {
+				position: absolute;
+				right: 7px;
+				font-size: 18px;
+				top: 10px;
+				cursor: pointer;
+			}
+
+			.container-birdAlert .close-birdAlert:hover {
+				opacity: 0.5;
+			}
+
+			.container-birdAlert .title-birdAlert {
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+
+			.container-birdAlert[data-type="success"] {
+				background: #caf5b2;
+				color: #386a15;
+			}
+
+			.container-birdAlert[data-type="error"] {
+				background: #ffcac8;
+				color: #974a4a;
+			}
+
+			.container-birdAlert[data-type="alert"] {
+				background: #f5dfa7;
+				color: #755910;
+			}
+
+			.container-birdAlert[data-type="info"] {
+				background: #c8f2ff;
+				color: #366872;
+			}
+    	</style>
+  	</head>
+  	<body>
+    	<button type="button" id="btnNotify"></button>
+
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    	<script type="text/javascript" src="../src/bird-alert.js"></script>
+    	<script type="text/javascript" src="test.js"></script>
+  	</body>
+</html>
