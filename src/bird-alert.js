@@ -13,14 +13,12 @@ function BirdAlert(options) {
         duration: 5000,
         className: 'error',
         showAnimation: 'slideInDown',
-        showDuration: 400,
         hideAnimation: 'slideOutRight',
-        hideDuration: 200,
         position: 'top left',
         quantity: 7,
         agroup: true,
         width: 400,
-        zindex: 1000,
+        zIndex: 1000,
         onShow: function () {},
         onHide: function () {}
     },
@@ -66,9 +64,17 @@ function BirdAlert(options) {
             }
         }
 
-        el.data('timeOut', setTimeout(function () {
-            hideElement(el);
-        }, options.duration));
+        if (options.autoHide) {
+            el.data('timeOut', setTimeout(function () {
+                hideElement(el);
+            }, options.duration));
+        }
+
+        if (options.clickToHide) {
+            el.on('click', function () {
+                hideElement($(this));
+            });
+        }
     };
 
     var hideElement = function (el) {
@@ -91,5 +97,7 @@ function BirdAlert(options) {
         if (options.position == 'top center' || options.position == 'bottom center') {
             _this.element.css({'margin-left': '-'+(options.width/2)+'px'});
         }
+
+        _this.element.css({'z-index': options.zIndex });
     })();
 }
