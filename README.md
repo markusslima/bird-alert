@@ -1,5 +1,5 @@
 
-# [Bird Alert v1.0.0](http://markusslima.github.io/bootstrap-filestyle/)
+# [Bird Alert v1.0.0](https://markusslima.github.io/bird-alert/)
 
 The **Bird Alert** is done for you who need practicality and versatility to display messages in your projects. 
 
@@ -22,7 +22,7 @@ Thank you!
 Maintained by [Markus Lima](https://github.com/markusslima) [@markusslima](https://twitter.com/markusslima)
 
 ### Getting Started, Documentation and Examples
-http://markusslima.github.io/bootstrap-filestyle/
+https://markusslima.github.io/bird-alert/
 
 ### Bug tracker
 
