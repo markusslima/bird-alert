@@ -1,7 +1,7 @@
 
-# [Bootstrap FileStyle v2.1.0](http://markusslima.github.io/bootstrap-filestyle/)
+# [Bird Alert v1.0.0](http://markusslima.github.io/bootstrap-filestyle/)
 
-Bootstrap FileStyle is a quick and simple and beaultiful plugin to help style your form's file upload inputs using Bootstrap 4.
+The **Bird Alert** is done for you who need practicality and versatility to display messages in your projects. 
 
 ------------------------------------------------------------------------------------
 # Alert
@@ -26,7 +26,7 @@ http://markusslima.github.io/bootstrap-filestyle/
 
 ### Bug tracker
 
-Have a bug or a feature request? [Please open a new issue](https://github.com/markusslima/bootstrap-filestyle/issues).
+Have a bug or a feature request? [Please open a new issue](https://github.com/markusslima/bird-alert-filestyle/issues).
 
 ### Copyright and license
 
