@@ -1,6 +1,5 @@
 var birdAlert = new BirdAlert({
 	position: 'top right',
-	agroup: false
 });
 
 
