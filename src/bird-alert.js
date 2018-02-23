@@ -6,8 +6,7 @@
 function BirdAlert(options) {
     "use strict";
 
-    var _this = this,
-    defaults = {
+    this.defaults = {
         clickToHide: true,
         autoHide: true,
         duration: 5000,
@@ -21,7 +20,9 @@ function BirdAlert(options) {
         zIndex: 1000,
         onShow: function () {},
         onHide: function () {}
-    },
+    };
+
+    var _this = this,
     positions = {
         'top left': {'top': '10px', 'left': '10px', 'bottom': 'auto', 'right': 'auto'},
         'top center': {'top': '10px', 'left': '50%', 'bottom': 'auto', 'right': 'auto'},
