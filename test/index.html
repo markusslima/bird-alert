@@ -30,10 +30,15 @@
 
 			.birdAlert .container-birdAlert .close-birdAlert {
 				position: absolute;
-				right: 7px;
-				font-size: 14px;
-				top: 10px;
-				cursor: pointer;
+			    right: 10px;
+			    font-size: 28px;
+			    top: -3px;
+			    cursor: pointer;
+			    font-weight: bold;
+			    font-family: monospace !important;
+			    font-style: normal;
+			    transform: rotate(45deg);
+    			-webkit-transform: rotate(45deg);
 			}
 
 			.birdAlert .container-birdAlert .close-birdAlert:hover {
@@ -56,7 +61,7 @@
 				color: #974a4a;
 			}
 
-			.birdAlert .container-birdAlert.alert {
+			.birdAlert .container-birdAlert.warning {
 				background: #f5dfa7;
 				color: #755910;
 			}
@@ -68,8 +73,11 @@
     	</style>
   	</head>
   	<body>
-    	<button type="button" class="btn btn-primary" id="btnNotify">Botão de teste</button>
-    	<button type="button" class="btn btn-danger" id="btnNotifyError">Botão de Error</button>
+    	<button type="button" class="btn btn-success" id="btnSuccess">Success</button>
+    	<button type="button" class="btn btn-danger" id="btnError">Error</button>
+    	<button type="button" class="btn btn-warning" id="btnWarning">Warning</button>
+    	<button type="button" class="btn btn-info" id="btnInfo">Info</button>
+    	<button type="button" class="btn btn-primary" id="btnSet">Set options</button>
 
     	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
