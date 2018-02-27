@@ -1,4 +1,3 @@
-
 /*
  * bird-alert
  * doc: http://markusslima.github.io/bird-alert/
@@ -18,7 +17,6 @@ function BirdAlert(options) {
         closeButton: true,
         autoHide: true,
         duration: 5000,
-        className: 'error',
         showAnimation: 'flipInX',
         hideAnimation: 'flipOutX',
         inverseInsert: false,
@@ -69,8 +67,9 @@ function BirdAlert(options) {
             } else {
                 _this.element.append(el);
             }
+            
             if (options.agroup) {
-                if (_this.element.find('.container-birdAlert').length >= options.quantity) {
+                if (_this.element.find('.container-birdAlert').length > options.quantity) {
                     _this.element.find('.container-birdAlert:last').remove();
                 }
             } else {
@@ -81,7 +80,7 @@ function BirdAlert(options) {
         } else {
             _this.element.append(el);
             if (options.agroup) {
-                if (_this.element.find('.container-birdAlert').length >= options.quantity) {
+                if (_this.element.find('.container-birdAlert').length > options.quantity) {
                     _this.element.find('.container-birdAlert:first').remove();
                 }
             } else {
@@ -92,9 +91,9 @@ function BirdAlert(options) {
         }
 
         if (options.autoHide) {
-            el.data('timeOut', setTimeout(function () {
-                hideElement(el);
-            }, options.duration));
+            setTimeout(function () {
+                    hideElement(el);
+                }, options.duration);
         }
 
         if (options.clickToHide) {
@@ -114,17 +113,32 @@ function BirdAlert(options) {
         el.removeClass(options.showAnimation).addClass(options.hideAnimation);
         el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
             el.remove();
+            options.onHide();
         });
-        clearTimeout(el.data('timeOut'));
-        options.onHide();
+    };
+
+    this.setDefaults = function () {
+        options = $.extend({}, options, defaults, typeof defaults === 'object' && defaults);
+        _this.element.css(positions[options.position]);
+        _this.element.css({'width': options.width+'px'});
+
+        if (options.position == 'top center' || options.position == 'bottom center') {
+            _this.element.css({'margin-left': '-'+(options.width/2)+'px'});
+        } else {
+            _this.element.css({'margin-left': '0'});
+        }
+        _this.element.css({'z-index': options.zIndex });
     };
 
     this.set = function (param) {
         options = $.extend({}, options, param, typeof param === 'object' && param);
-
         _this.element.css(positions[options.position]);
+        _this.element.css({'width': options.width+'px'});
+
         if (options.position == 'top center' || options.position == 'bottom center') {
             _this.element.css({'margin-left': '-'+(options.width/2)+'px'});
+        } else {
+            _this.element.css({'margin-left': '0'});
         }
         _this.element.css({'z-index': options.zIndex });
     };
@@ -138,8 +152,9 @@ function BirdAlert(options) {
 
         if (options.position == 'top center' || options.position == 'bottom center') {
             _this.element.css({'margin-left': '-'+(options.width/2)+'px'});
+        } else {
+            _this.element.css({'margin-left': '0'});
         }
-
         _this.element.css({'z-index': options.zIndex });
     })();
 }
