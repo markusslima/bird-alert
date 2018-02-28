@@ -92,8 +92,8 @@ function BirdAlert(options) {
 
         if (options.autoHide) {
             setTimeout(function () {
-                    hideElement(el);
-                }, options.duration);
+                hideElement(el);
+            }, options.duration);
         }
 
         if (options.clickToHide) {
@@ -110,10 +110,10 @@ function BirdAlert(options) {
     };
 
     var hideElement = function (el) {
+        options.onHide();
         el.removeClass(options.showAnimation).addClass(options.hideAnimation);
         el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
             el.remove();
-            options.onHide();
         });
     };
 
