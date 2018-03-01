@@ -27,14 +27,8 @@ $('#btnLongMsg').on('click', function () {
 
 /* OPTIONS */
 $('#btnClickToHide').on('click', function () {
-	birdAlert.set({
-		clickToHide: false,
-		onHide: function () {
-			birdAlert.set({
-				clickToHide: true
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({clickToHide: false });
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et tincidunt tincidunt. Dictumst dignissim, mauris et tincidunt', 
@@ -44,14 +38,8 @@ $('#btnClickToHide').on('click', function () {
 });
 
 $('#btnCloseButton').on('click', function () {
-	birdAlert.set({
-		closeButton: false,
-		onHide: function () {
-			birdAlert.set({
-				closeButton: true
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({closeButton: false });
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et tincidunt tincidunt. Dictumst dignissim, mauris et tincidunt', 
@@ -60,14 +48,8 @@ $('#btnCloseButton').on('click', function () {
 	});
 });
 $('#btnAutoHide').on('click', function () {
-	birdAlert.set({
-		autoHide: false,
-		onHide: function () {
-			birdAlert.set({
-				autoHide: true
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({autoHide: false });
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et', 
@@ -77,14 +59,8 @@ $('#btnAutoHide').on('click', function () {
 });
 
 $('#btnDuration').on('click', function () {
-	birdAlert.set({
-		duration: 1000,
-		onHide: function () {
-			birdAlert.set({
-				duration: 5000
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({duration: 1000 });
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et', 
@@ -94,16 +70,8 @@ $('#btnDuration').on('click', function () {
 });
 
 $('#btnShowAnimation').on('click', function () {
-	birdAlert.set({
-		showAnimation: 'fadeIn',
-		hideAnimation: 'fadeOut',
-		onHide: function () {
-			birdAlert.set({
-				showAnimation: 'flipInX',
-				hideAnimation: 'flipOutX'
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({showAnimation: 'fadeIn', hideAnimation: 'fadeOut'});
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et', 
@@ -113,14 +81,8 @@ $('#btnShowAnimation').on('click', function () {
 });
 
 $('#btnInverseInsert').on('click', function () {
-	birdAlert.set({
-		inverseInsert: true,
-		onHide: function () {
-			birdAlert.set({
-				inverseInsert: false
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({inverseInsert: true });
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et', 
@@ -130,14 +92,8 @@ $('#btnInverseInsert').on('click', function () {
 });
 
 $('#btnPreventDuplicate').on('click', function () {
-	birdAlert.set({
-		preventDuplicate: true,
-		onHide: function () {
-			birdAlert.set({
-				preventDuplicate: false
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({preventDuplicate: true });
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -147,14 +103,8 @@ $('#btnPreventDuplicate').on('click', function () {
 });
 
 $('#btnTopLeft').on('click', function () {
-	birdAlert.set({
-		position: 'top left',
-		onHide: function () {
-			birdAlert.set({
-				position: 'top right'
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({position: 'top left'});
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -164,14 +114,8 @@ $('#btnTopLeft').on('click', function () {
 });
 
 $('#btnTopCenter').on('click', function () {
-	birdAlert.set({
-		position: 'top center',
-		onHide: function () {
-			birdAlert.set({
-				position: 'top right'
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({position: 'top center'});
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -181,14 +125,8 @@ $('#btnTopCenter').on('click', function () {
 });
 
 $('#btnTopRight').on('click', function () {
-	birdAlert.set({
-		position: 'top right',
-		onHide: function () {
-			birdAlert.set({
-				position: 'top right'
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({position: 'top right'});
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -198,14 +136,8 @@ $('#btnTopRight').on('click', function () {
 });
 
 $('#btnBottomLeft').on('click', function () {
-	birdAlert.set({
-		position: 'bottom left',
-		onHide: function () {
-			birdAlert.set({
-				position: 'bottom left'
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({position: 'bottom left'});
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -215,14 +147,8 @@ $('#btnBottomLeft').on('click', function () {
 });
 
 $('#btnBottomCenter').on('click', function () {
-	birdAlert.set({
-		position: 'bottom center',
-		onHide: function () {
-			birdAlert.set({
-				position: 'bottom center'
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({position: 'bottom center'});
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -232,14 +158,8 @@ $('#btnBottomCenter').on('click', function () {
 });
 
 $('#btnBottomRight').on('click', function () {
-	birdAlert.set({
-		position: 'bottom right',
-		onHide: function () {
-			birdAlert.set({
-				position: 'bottom right'
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({position: 'bottom right'});
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -249,14 +169,8 @@ $('#btnBottomRight').on('click', function () {
 });
 
 $('#btnQuantity').on('click', function () {
-	birdAlert.set({
-		quantity: 3,
-		onHide: function () {
-			birdAlert.set({
-				quantity: 7
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({quantity: 3 });
 
 	birdAlert.notify({
 		msg: 'Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -267,14 +181,8 @@ $('#btnQuantity').on('click', function () {
 
 
 $('#btnAgroup').on('click', function () {
-	birdAlert.set({
-		agroup: false,
-		onHide: function () {
-			birdAlert.set({
-				agroup: true
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({agroup: false });
 
 	birdAlert.notify({
 		msg: 'No agroup. Facilisis pellentesque dictumst dignissim, mauris et dignissim.', 
@@ -284,14 +192,8 @@ $('#btnAgroup').on('click', function () {
 });
 
 $('#btnWidth').on('click', function () {
-	birdAlert.set({
-		width: 800,
-		onHide: function () {
-			birdAlert.set({
-				width: 400
-			});
-		}
-	});
+	birdAlert.setDefaults();
+	birdAlert.set({width: 800});
 
 	birdAlert.notify({
 		msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum elementum eros in commodo. Vestibulum enim leo, laoreet vitae purus et, suscipit finibus orci. Praesent viverra nulla sed ipsum elementum, sit amet pellentesque lacus pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas', 

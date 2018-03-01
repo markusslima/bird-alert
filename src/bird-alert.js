@@ -78,7 +78,11 @@ function BirdAlert(options) {
                 }
             }
         } else {
-            _this.element.append(el);
+            if (!options.inverseInsert) {
+                _this.element.prepend(el);
+            } else {
+                _this.element.append(el);
+            }
             if (options.agroup) {
                 if (_this.element.find('.container-birdAlert').length > options.quantity) {
                     _this.element.find('.container-birdAlert:first').remove();
@@ -145,7 +149,7 @@ function BirdAlert(options) {
 
     (function () {
         options = $.extend({}, defaults, options, typeof options === 'object' && options);
-        _this.element = $('<div class="birdAlert"></div>');
+        _this.element = $('<div class="birdAlert" style="position: fixed;"></div>');
         $('body').append(_this.element);
         _this.element.css(positions[options.position]);
         _this.element.css({'width': options.width+'px'});
