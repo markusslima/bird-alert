@@ -8,7 +8,6 @@
 	-webkit-transition: 0.7s ease-in-out; 
 	   -moz-transition: 0.7s ease-in-out; 
 		 -o-transition: 0.7s ease-in-out;
-	border-radius: 5px;
 	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
 }
 
@@ -30,34 +29,34 @@
 }
 
 .birdAlert .container-birdAlert .title-birdAlert {
-	font-size: 20px;
+	font-size: 28px;
 	margin-bottom: 7px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 /**
  * Mensages class
  */
 .birdAlert .container-birdAlert.success {
-	color: #155724;
-	background-color: #d4edda;
-	border-color: #c3e6cb;
+	color: #3a660e;
+	background-color: #a4e265;
+	border-color: #60a917;
 }
 
 .birdAlert .container-birdAlert.error {
-	color: #721c24;
-	background-color: #f8d7da;
-	border-color: #f5c6cb;
+	color: #8f251f;
+	background-color: #ffa8a4;
+	border-color: #CE352C;
 }
 
 .birdAlert .container-birdAlert.warning {
-	color: #856404;
-	background-color: #fff3cd;
-	border-color: #ffeeba;
+	color: #a77107;
+	background-color: #ffd47e;
+	border-color: #f0a30a;
 }
 
 .birdAlert .container-birdAlert.info {
-	color: #004085;
-	background-color: #cce5ff;
-	border-color: #b8daff;
+	color: #13709e;
+	background-color: #8fd7fb;
+	border-color: #1ba1e2;
 }
