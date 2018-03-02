@@ -1,7 +1,7 @@
 .birdAlert .container-birdAlert {
 	width: auto;
 	background: #fff;
-	/*box-shadow: 1px 1px 7px rgba(100,100,100,0.6);*/
+	box-shadow: 3px 3px 10px rgba(100,100,100,0.3);
 	font-weight: 100;
 	padding: 15px;
 	margin-bottom: 10px;
