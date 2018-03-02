@@ -4,18 +4,20 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Bird Alert - Jquery plugin for displaying beautiful messages on your web system">
-		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
+		<meta name="description" content="jQuery Filestyle - jQuery Customization of input html file - Customization of upload">
+		<meta name="keywords" content="jquery filestyle customization input html file upload">
 		<meta name="author" content="Markus Lima">
 
-		<title>Bird Alert - Jquery plugin for displaying beautiful messages on your web system</title>
+		<title>jQuery Filestyle - jQuery Customization of input html file - Customization of upload</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Montserrat|Quicksand|Space+Mono" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/doc.css">
-		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
+		<link href="css/doc.css" rel="stylesheet">
+		<link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery-filestyle.min.css">
 
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -23,20 +25,16 @@
 		<![endif]-->
 	</head>
 
+
     <body>
 		<header></header>
         <div class="container">
         	<div class="row">
 				<div class="col">
-		        	<section>
-		            	<div class="page-header">
-							<h1> Get jQuery Filestyle </h1>
+					<section>
+						<div class="page-header">
+							<h1>Events</h1>
 							<hr>
-							<br>
-							<p>Click download to download the compressed jQuery Filestyle or click on Github to visit the project page on Github</p>
-							<a href="https://github.com/markusslima/jquery-filestyle" target="_blank" class="btn btn-dark btn-lg"> <span class="oi oi-random"></span> Github </a>
-							<a href="https://github.com/markusslima/jquery-filestyle/archive/v2.1.0.zip" class="btn btn-primary btn-lg"> <span class="oi oi-data-transfer-download"></span> Download 2.1.0 </a>
-							<br>
 							<br>
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<ins class="adsbygoogle"
@@ -49,38 +47,17 @@
 							     (adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
 						</div>
-					</section>
-					<section id="Description">
-						<div class="page-header">
-							<h1>Description</h1>
-							<hr>
-						</div>
-						<p>The <strong>jQuery Filestyle</strong> this is a jQuery plugin for filestyle you forget to turn the input file's default browser. Customize as you like, it's yours now.</p>
-						<p>This plugin has an interesting way to present a form for sending files so attractive, while being simple and efficient.</p>
-					</section>
-
-					<section id="Requirements">
-						<div class="page-header">
-							<h1>Requirements</h1>
-							<hr>
-						</div>
-						<p><a href="http://www.jquery.com" target="_blank">jQuery</a>.</p>
-					</section>
-
-					<section id="Getstart">
-						<div class="page-header">
-							<h1>Get Start</h1>
-							<hr>
-						</div>
-<pre><code class="language-html">&lt;head&gt;
-  &lt;link href="css/jquery-filestyle.min.js"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;input type="file" class="jfilestyle" data-input="false"&gt;
-  &lt;script src="js/jquery.js"&gt;&lt;/script&gt;
-  &lt;script src="js/jquery-filestyle.min.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
+						<h3>onChange</h3>
+						<div class="well well-small">
+							<h4>- Execute function after change</h4>
+							<br>
+<pre><code class="language-javascript">$(<span class="str">":file"</span>).jfilestyle({
+   <span class="str">'onChange'</span>: function (files) {
+      console.log(files)
+   }
+});
 </code></pre>
+						</div>
 					</section>
 					<section>
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

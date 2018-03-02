@@ -1,0 +1,90 @@
+
+@font-face {
+    font-family: Brotherhood_Script;
+    src: url(fonts/Brotherhood_Script.ttf);
+}
+
+body {
+	padding: 59px 0 0 0;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+p {
+	font-family: 'Space Mono', monospace;
+}
+h3 {
+	margin-top: 40px;
+	font-family: 'Space Mono', monospace;
+	font-size: 1.8em;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.well {
+	font-size: 16px;
+}
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Space Mono', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+.bg-primary {
+    background: rgba(111,0,128,1);
+	background: -moz-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(111,0,128,1)), color-stop(10%, rgba(111,0,128,1)), color-stop(100%, rgba(68,0,255,1)));
+	background: -webkit-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
+	background: linear-gradient(to right, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f0080', endColorstr='#4400ff', GradientType=1 );
+}
+.page-header h1 {
+	color: #a229b5;
+	/*font-family: 'Quicksand', sans-serif;*/
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.well.well-small {
+	border: 1px solid #dedede;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+}
+.navbar-dark .navbar-nav .nav-link {
+	padding: 5px 14px;
+}
+section {
+	padding: 0 0 60px;
+}
+header {
+	padding: 75px 20px;
+}
+header img {
+	width: 64%;
+}
+@media only screen and (max-width: 990px) {
+    header img {
+		width: 80%;
+    }
+}
+footer {
+	padding: 20px 0px 10px;
+	background: #333;
+	color: #fff;
+	font-size: 14px;
+	line-height: 
+}
+footer p {
+	margin-bottom: 5px;
+	letter-spacing: 1.5px;
+	font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+h3 div {
+	font-size: 45%;
+	color: #808080;
+	font-weight: normal;
+	line-height: 40px;
+}
