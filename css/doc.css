@@ -41,6 +41,26 @@ body {
 	min-height: 400px;
     background: #fff;
     margin-top: 500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#geral h2 {
+	margin: 30px 20px 10px;
+    font-weight: 100;
+    font-family: A_Perfect_Place;
+    font-size: 4em;
+    color: #e49400;
+}
+#geral p {
+	font-size: 1.6em;
+    font-weight: 200;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#geral p a.btn {
+	color: #fff;
 }
 
 .subtitle {
