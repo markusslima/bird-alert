@@ -1,0 +1,62 @@
+.birdAlert .container-birdAlert {
+	width: auto;
+	background: #fff;
+	/*box-shadow: 1px 1px 7px rgba(100,100,100,0.6);*/
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+	-webkit-transition: 0.7s ease-in-out; 
+	   -moz-transition: 0.7s ease-in-out; 
+		 -o-transition: 0.7s ease-in-out;
+	border-radius: 5px;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+}
+
+.birdAlert .container-birdAlert .close-birdAlert {
+	position: absolute;
+    right: 10px;
+    font-size: 28px;
+    top: -3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace !important;
+    font-style: normal;
+    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.birdAlert .container-birdAlert .close-birdAlert:hover {
+	opacity: 0.5;
+}
+
+.birdAlert .container-birdAlert .title-birdAlert {
+	font-size: 20px;
+	margin-bottom: 7px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+/**
+ * Mensages class
+ */
+.birdAlert .container-birdAlert.success {
+	background-color: #18d2ba;
+	border-color: #18d2ba;
+}
+
+.birdAlert .container-birdAlert.error {
+	background-color: #ff1a4f;
+	border-color: #ff1a4f;
+}
+
+.birdAlert .container-birdAlert.warning {
+	background-color: #ffbf00;
+	border-color: #ffbf00;
+}
+
+.birdAlert .container-birdAlert.info {
+	background-color: #4894f0;
+	border-color: #4894f0;
+}
