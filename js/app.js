@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var menuHTML = '<nav class="navbar navbar-dark bg-primary fixed-top navbar-expand-lg" role="navigation">'
+	var menuHTML = '<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg" role="navigation">'
 				 + '	<div class="container">'
 				 + '	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">'
 				 + '	  	  	<span class="navbar-toggler-icon"></span>'
@@ -62,4 +62,8 @@ $(document).ready(function () {
 
 	var d = new Date();
 	$('#ano').html(d.getFullYear());
+
+	$('.cloud').each(function () {
+  		$(this).css('margin-left', Math.floor((Math.random() * 70) + 20)+'%');
+	})
 });

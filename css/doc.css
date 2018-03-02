@@ -1,90 +1,197 @@
 
 @font-face {
-    font-family: Brotherhood_Script;
-    src: url(fonts/Brotherhood_Script.ttf);
+    font-family: A_Perfect_Place;
+    src: url(fonts/A_Perfect_Place.ttf);
+}
+
+* {
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 body {
-	padding: 59px 0 0 0;
-	font-size: 20px;
-	font-family: 'Montserrat', sans-serif;
-}
-p {
-	font-family: 'Space Mono', monospace;
-}
-h3 {
-	margin-top: 40px;
-	font-family: 'Space Mono', monospace;
-	font-size: 1.8em;
-	margin-bottom: 15px;
-	font-weight: bold;
-}
-.well {
-	font-size: 16px;
-}
-/*
-font-family: 'Indie Flower', cursive;
-font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Space Mono', monospace;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Quicksand', sans-serif;
-*/
-.bg-primary {
-    background: rgba(111,0,128,1);
-	background: -moz-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(111,0,128,1)), color-stop(10%, rgba(111,0,128,1)), color-stop(100%, rgba(68,0,255,1)));
-	background: -webkit-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
-	background: -o-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
-	background: -ms-linear-gradient(left, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
-	background: linear-gradient(to right, rgba(111,0,128,1) 0%, rgba(111,0,128,1) 10%, rgba(68,0,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f0080', endColorstr='#4400ff', GradientType=1 );
-}
-.page-header h1 {
-	color: #a229b5;
-	/*font-family: 'Quicksand', sans-serif;*/
-	font-family: 'Gloria Hallelujah', cursive;
+    background: #6dd3e7;
+    margin-top: 140px;
+  	overflow-x: hidden;
 }
 
-.well.well-small {
-	border: 1px solid #dedede;
-    padding: 20px;
-    margin-bottom: 20px;
-    background: #f9f9f9;
-}
-.navbar-dark .navbar-nav .nav-link {
-	padding: 5px 14px;
-}
-section {
-	padding: 0 0 60px;
-}
-header {
-	padding: 75px 20px;
-}
-header img {
-	width: 64%;
-}
-@media only screen and (max-width: 990px) {
-    header img {
-		width: 80%;
-    }
-}
-footer {
-	padding: 20px 0px 10px;
-	background: #333;
-	color: #fff;
-	font-size: 14px;
-	line-height: 
-}
-footer p {
-	margin-bottom: 5px;
-	letter-spacing: 1.5px;
-	font-family: 'Gloria Hallelujah', cursive;
-
+.sky {
+	position: absolute;
+    width: 100%;
+    top: 245px;
 }
 
-h3 div {
-	font-size: 45%;
-	color: #808080;
-	font-weight: normal;
-	line-height: 40px;
+.title {
+	font-family: A_Perfect_Place;
+    position: absolute;
+    top: 300px;
+    font-size: 10em;
+    color: #00617d;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+#geral {
+	min-height: 400px;
+    background: #fff;
+    margin-top: 500px;
+}
+
+.subtitle {
+	top: 455px;
+    position: absolute;
+    font-size: 1.3em;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.bird {
+	position: absolute;
+    top: 210px;
+    left: 50%;
+    margin-left: -64px;
+    z-index: 8;
+}
+
+.cloud {
+  	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+  	position: relative;
+  	margin: 10px 0 0 0;
+  	width: 54px;
+  	height: 5px;
+  	background: #f7e7eb;
+  	-webkit-animation: clouds 50s infinite linear;
+  	-moz-animation: clouds 50s infinite linear;
+  	-ms-animation: clouds 50s infinite linear;
+  	-o-animation: clouds 50s infinite linear;
+  	animation: clouds 50s infinite linear;
+}
+.cloud.tiny {
+  	-moz-transform: scale(0.5, 0.5);
+  	-ms-transform: scale(0.5, 0.5);
+  	-webkit-transform: scale(0.5, 0.5);
+  	transform: scale(0.5, 0.5);
+  	-webkit-animation-duration: 400s;
+  	-moz-animation-duration: 400s;
+  	-ms-animation-duration: 400s;
+  	-o-animation-duration: 400s;
+  	animation-duration: 400s;
+  	opacity: 0.6;
+    z-index: 6;
+}
+.cloud.small {
+  	-moz-transform: scale(1, 1);
+  	-ms-transform: scale(1, 1);
+  	-webkit-transform: scale(1, 1);
+  	transform: scale(1, 1);
+  	-webkit-animation-duration: 300s;
+  	-moz-animation-duration: 300s;
+  	-ms-animation-duration: 300s;
+  	-o-animation-duration: 300s;
+  	animation-duration: 300s;
+  	opacity: 0.8;
+    z-index: 7;
+}
+.cloud.normal {
+  	-moz-transform: scale(4, 4);
+ 	-ms-transform: scale(4, 4);
+ 	-webkit-transform: scale(4, 4);
+ 	transform: scale(4, 4);
+ 	-webkit-animation-duration: 150s;
+ 	-moz-animation-duration: 150s;
+ 	-ms-animation-duration: 150s;
+ 	-o-animation-duration: 150s;
+ 	animation-duration: 150s;
+ 	opacity: 0.9; 
+    z-index: 8;
+}
+.cloud.large {
+  	-moz-transform: scale(6, 6);
+  	-ms-transform: scale(6, 6);
+  	-webkit-transform: scale(6, 6);
+  	transform: scale(6, 6);
+  	-webkit-animation-duration: 90s;
+  	-moz-animation-duration: 90s;
+  	-ms-animation-duration: 90s;
+  	-o-animation-duration: 90s;
+  	animation-duration: 90s;
+    z-index: 9;
+ 	opacity: 0.95; 
+}
+.cloud div {
+  	-moz-box-shadow: inset -2px -3px 0 0 #f7e7eb;
+  	-webkit-box-shadow: inset -2px -3px 0 0 #f7e7eb;
+  	box-shadow: inset -2px -3px 0 0 #f7e7eb;
+  	position: absolute;
+  	border-radius: 50%;
+  	width: 12px;
+  	height: 12px;
+  	left: -3px;
+  	bottom: 0;
+  	background: #fafbf0;
+  	z-index: 10;
+}
+.cloud div:first-child + div {
+  	-moz-transform: scale(1.6, 1.6);
+  	-ms-transform: scale(1.6, 1.6);
+  	-webkit-transform: scale(1.6, 1.6);
+  	transform: scale(1.6, 1.6);
+  	margin: 0 0 4px 13px;
+  	z-index: 9;
+}
+.cloud div:first-child + div + div {
+  	-moz-transform: scale(2.4, 2.4);
+  	-ms-transform: scale(2.4, 2.4);
+  	-webkit-transform: scale(2.4, 2.4);
+  	transform: scale(2.4, 2.4);
+  	margin: 0 0 9px 32px;
+  	z-index: 8;
+}
+.cloud div:first-child + div + div + div {
+  	-moz-transform: scale(1.3, 1.3);
+  	-ms-transform: scale(1.3, 1.3);
+  	-webkit-transform: scale(1.3, 1.3);
+  	transform: scale(1.3, 1.3);
+  	margin: 0 0 2px 50px;
+  	z-index: 7;
+}
+
+@-webkit-keyframes clouds {
+  	0% {
+    	left: -100%;
+  	}
+  	100% {
+    	left: 120%;
+  	}
+}
+@-moz-keyframes clouds {
+  	0% {
+    	left: -100%;
+  	}
+  	100% {
+    	left: 120%;
+  	}
+}
+@-ms-keyframes clouds {
+  	0% {
+    	left: -100%;
+  	}
+  	100% {
+    	left: 120%;
+  	}
+}
+@keyframes clouds {
+  	0% {
+  	  left: -100%;
+  	}
+  	100% {
+  	  left: 120%;
+  	}
 }
