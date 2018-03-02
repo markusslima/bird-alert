@@ -16,6 +16,10 @@ body {
   	overflow-x: hidden;
 }
 
+.bg-dark {
+	background: #0e6b98 !important
+}
+
 .sky {
 	position: absolute;
     width: 100%;
