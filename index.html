@@ -14,6 +14,7 @@
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/bird-alert.css">
 		<link rel="stylesheet" href="css/doc.css">
 		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
@@ -21,59 +22,14 @@
 	<body>
 		<h1 class="title">Bird Alert</h1>
 		<h3 class="subtitle">Jquery plugin for displaying beautiful messages on your web system</h3>
-		<div class="sky">
-			<div class="cloud normal">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud normal">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud normal">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-		</div>
+		<div class="sky"></div>
 		<img src="imagens/bird-128x128.gif" class="bird">
 
 
 		<div class="container" id="geral">
 			<div class="row">
 				<div class="col">
+					<h1 class="text-center titlePage">Get start</h1>
 					<h2>About</h2>
 					<p>Tired of the notification plugins that something is always missing? <b>Bird Alert</b> came to save your life. Fully customizable and easy to use, now your application will have beautiful alert messages.</p>
 
@@ -96,13 +52,30 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="bird-alert.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="bird-alert.min.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;html&gt;
 </code></pre>
 					</div>
+
+					<h2>Usage</h2>
+					<p><button type="button" class="btn btn-primary" id="btnBasic">Show alert</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({zIndex: 2100});
+
+$('#btnBasic').on('click', function () {
+	birdAlert.notify({
+		msg: 'Basic mensage', 
+		title: 'Success', 
+		className: 'success'
+	});
+});
+</code></pre>
+					</div>
 				</div>
 			</div>
+			<br>
+        	<footer></footer>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -111,14 +84,25 @@
         <script type="text/javascript" src="js/prism.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/bird-alert.min.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
+		<script>
+			var birdAlert = new BirdAlert({zIndex: 2100});
 
-            ga('create', 'UA-42464483-2', 'markusslima.github.io');
-            ga('send', 'pageview');
-        </script>
+			$('#btnBasic').on('click', function () {
+				birdAlert.notify({
+					msg: 'Basic mensage', 
+					title: 'Success', 
+					className: 'success'
+				});
+			});
+		</script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-42464483-5');
+		</script>
     </body>
 </html>

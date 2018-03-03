@@ -15,6 +15,23 @@ body {
     overflow-x: hidden;
 }
 
+.blockWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 2500;
+}
+
+.blockWindow h1 {
+    color: #fff;
+    font-size: 5em;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
 .bg-dark {
 	background: #0e6b98 !important
 }
@@ -36,6 +53,14 @@ body {
     z-index: 10;
 }
 
+.titlePage {
+    font-family: Curely-Free-Typeface;
+    font-size: 4em;
+    margin-top: 30px;
+    text-decoration: underline;
+    color: darkgray;
+}
+
 #geral {
 	min-height: 400px;
     background: #fff;
@@ -46,9 +71,17 @@ body {
 
 #geral h2 {
 	margin: 40px 20px 10px;
-    font-family: Curely-Free-Typeface;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+    font-weight: 100;
     font-size: 2.6em;
     color: #ff8e2a;
+}
+
+#geral h3 {
+    font-size: 1.1em;
+    color: #a0a0a0;
+    margin: -9px 20px 20px;
+    font-weight: normal;
 }
 #geral p {
 	font-size: 1.6em;

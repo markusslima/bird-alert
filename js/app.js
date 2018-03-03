@@ -40,6 +40,54 @@ $(document).ready(function () {
 
 	$('body').prepend(menuHTML);
 
+	var sky = '<div class="cloud normal"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud large"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud small"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud tiny"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud large"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud normal"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud small"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud tiny"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud small"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud normal"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud tiny"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud large"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud small"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud tiny"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div> '+
+			  '<div class="cloud large"> '+
+			  '  <div></div><div></div><div></div><div></div> '+
+			  '</div>';
+
+	$('.sky').prepend(sky);
+
 	var htmlFooter = '<div class="container">'
 				   + '	<div class="row">'
 				   + '		<div class="col text-center">'
