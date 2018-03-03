@@ -8,70 +8,36 @@
 		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>Bird Alert - Get Start - Jquery plugin for displaying beautiful messages on your web system</title>
+		<title>Bird Alert - Theme foundation - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/bird-alert.css">
+		<link rel="stylesheet" href="css/bird-alert-foundation.css">
 		<link rel="stylesheet" href="css/doc.css">
 		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
 	</head>
 	<body>
 		<h1 class="title">Bird Alert</h1>
 		<h3 class="subtitle">Jquery plugin for displaying beautiful messages on your web system</h3>
-		<div class="sky"></div>
+		<div class="sky"> </div>
 		<img src="imagens/bird-128x128.gif" class="bird">
 
 
 		<div class="container" id="geral">
 			<div class="row">
 				<div class="col">
-					<h1 class="text-center titlePage">Get start</h1>
-					<h2>About</h2>
-					<p>Tired of the notification plugins that something is always missing? <b>Bird Alert</b> came to save your life. Fully customizable and easy to use, now your application will have beautiful alert messages.</p>
-
-					<h2>Get Bird Alert</h2>
+					<h1 class="text-center titlePage">Foundation theme</h1>
+					<h2>Examples</h2>
 					<p>
-						<a href="https://github.com/markusslima/bird-alert" class="btn btn-secondary" target="_target"><span class="oi oi-random"></span> Project on Github </a>
-						<a href="https://github.com/markusslima/bird-alert/archive/v1.0.0.zip" class="btn btn-primary" target="_target"><span class="oi oi-data-transfer-download"></span> Download Version 1.0.0</a>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Error</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
 					</p>
-
-					<h2>Requirements</h2>
-					<p> <a href="https://jquery.com" target="_target">jQuery</a> and <a href="https://daneden.github.io/animate.css/" target="_target">Animate CSS</a> </p>
-
-					<h2>Install</h2>
-					<div>
-<pre><code class="language-html">&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Bird Alert&lt;/title&gt;
-    &lt;link rel="stylesheet" href="animate.css"&gt;
-    &lt;link rel="stylesheet" href="bird-alert.css"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="bird-alert.min.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;html&gt;
-</code></pre>
-					</div>
-
-					<h2>Usage</h2>
-					<p><button type="button" class="btn btn-primary" id="btnBasic">Show alert</button></p>
-					<div>
-<pre><code class="language-javascript">var birdAlert = new BirdAlert({zIndex: 2100});
-
-$('#btnBasic').on('click', function () {
-	birdAlert.notify({
-		msg: 'Basic mensage', 
-		title: 'Success', 
-		className: 'success'
-	});
-});
-</code></pre>
-					</div>
+					<p><a href="themes.html">Back to themes</a></p>
 				</div>
 			</div>
 			<br>
@@ -87,13 +53,39 @@ $('#btnBasic').on('click', function () {
         <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
 		<script>
-			var birdAlert = new BirdAlert({zIndex: 2100});
+			var birdAlert = new BirdAlert({
+				zIndex: 1200
+			});
 
-			$('#btnBasic').on('click', function () {
+			$('.btn-success').on('click', function () {
 				birdAlert.notify({
-					msg: 'Basic mensage', 
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
 					title: 'Success', 
 					className: 'success'
+				});
+			});
+
+			$('.btn-danger').on('click', function () {
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'Success', 
+					className: 'error'
+				});
+			});
+
+			$('.btn-warning').on('click', function () {
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'Success', 
+					className: 'warning'
+				});
+			});
+
+			$('.btn-info').on('click', function () {
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'Success', 
+					className: 'info'
 				});
 			});
 		</script>

@@ -1,0 +1,63 @@
+.birdAlert .container-birdAlert {
+	width: auto;
+	background: #fff;
+	box-shadow: 3px 3px 10px rgba(150,150,150,0.3);
+	font-weight: 100;
+	padding: 15px;
+	margin-bottom: 10px;
+	text-align: left;
+	-webkit-transition: 0.7s ease-in-out; 
+	   -moz-transition: 0.7s ease-in-out; 
+		 -o-transition: 0.7s ease-in-out;
+	font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.birdAlert .container-birdAlert .close-birdAlert {
+	position: absolute;
+    right: 10px;
+    font-size: 38px;
+    top: -5px;
+    cursor: pointer;
+    font-weight: 100;
+    font-style: normal;
+    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.birdAlert .container-birdAlert .close-birdAlert:hover {
+	opacity: 0.5;
+}
+
+.birdAlert .container-birdAlert .title-birdAlert {
+	font-size: 22px;
+	margin-bottom: 8px;
+	margin-top: -5px;
+	font-weight: 100;
+}
+
+/**
+ * Mensages class
+ */
+.birdAlert .container-birdAlert.success {
+	color: #53c198;
+	background-color: #edfbf6;
+	border-color: #edfbf6;
+}
+
+.birdAlert .container-birdAlert.error {
+	color: #f0506e;
+	background-color: #fef4f6;
+	border-color: #fef4f6;
+}
+
+.birdAlert .container-birdAlert.warning {
+	color: #ec861a;
+	background-color: #fff6ee;
+	border-color: #fff6ee;
+}
+
+.birdAlert .container-birdAlert.info {
+	color: #1e87f0;
+	background-color: #d8eafc;
+	border-color: #d8eafc;
+}

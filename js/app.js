@@ -28,7 +28,7 @@ $(document).ready(function () {
 				 + '					<a class="nav-link" href="./events.html">Events</a>'
 				 + '				</li>'
 				 + '				<li class="nav-item">'
-				 + '					<a class="nav-link" href="./extends.html">Extends</a>'
+				 + '					<a class="nav-link" href="./themes.html">Themes</a>'
 				 + '				</li>'
 				 + '				<li class="nav-item">'
 				 + '					<a class="nav-link" href="./questions.html">Questions</a>'

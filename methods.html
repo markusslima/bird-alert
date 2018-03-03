@@ -8,7 +8,7 @@
 		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>Bird Alert - Jquery plugin for displaying beautiful messages on your web system</title>
+		<title>Bird Alert - Methods - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
 
@@ -44,6 +44,23 @@ birdAlert.notify({
 </code></pre>
 					</div>
 
+					<p>The <b>className</b> parameter is used to set the css class of the theme. You can add new classes to the theme in css. The default class are: <b>success</b>, <b>error</b>, <b>warning</b> and <b>info</b>.</p>
+					<div>
+<pre><code class="language-css">/* CSS */
+.birdAlert .container-birdAlert.myClass {
+	background: #dedede;
+	color: #a0a0a0;
+}
+</code></pre>
+<pre><code class="language-javascript">/* JavaScript */
+birdAlert.notify({
+	msg: 'Mensage bla bla bla!!!', 
+	title: 'My Mensage', 
+	className: 'myClass'
+});
+</code></pre>
+					</div>
+
 					<h2>.set()</h2>
 					<h3><b>.set</b>({<b>option</b>: value [<b>, option</b>: value]})</h3>
 					<p>Updates the current object options</p>
@@ -66,7 +83,7 @@ birdAlert.set({
 					<div>
 <pre><code class="language-javascript">var birdAlert = new BirdAlert({
 	clickToHide: false,
-	showAnimation: 'fadeIn',
+	showAnimation: 'fadeIn'
 });
 birdAlert.setDefaults();
 </code></pre>

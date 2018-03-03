@@ -4,91 +4,111 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="jQuery Filestyle - jQuery Customization of input html file - Customization of upload">
-		<meta name="keywords" content="jquery filestyle customization input html file upload">
+		<meta name="description" content="Bird Alert - Jquery plugin for displaying beautiful messages on your web system">
+		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>jQuery Filestyle - jQuery Customization of input html file - Customization of upload</title>
+		<title>Bird Alert - Events - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
-		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Montserrat|Quicksand|Space+Mono" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link href="css/doc.css" rel="stylesheet">
-		<link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/jquery-filestyle.min.css">
-
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bird-alert.css">
+		<link rel="stylesheet" href="css/doc.css">
+		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
 	</head>
+	<body>
+		<h1 class="title">Bird Alert</h1>
+		<h3 class="subtitle">Jquery plugin for displaying beautiful messages on your web system</h3>
+		<div class="sky"> </div>
+		<img src="imagens/bird-128x128.gif" class="bird">
 
 
-    <body>
-		<header></header>
-        <div class="container">
-        	<div class="row">
+		<div class="container" id="geral">
+			<div class="row">
 				<div class="col">
-					<section>
-						<div class="page-header">
-							<h1>Events</h1>
-							<hr>
-							<br>
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-							     style="display:block; text-align:center;"
-							     data-ad-format="fluid"
-							     data-ad-layout="in-article"
-							     data-ad-client="ca-pub-8894792596723869"
-							     data-ad-slot="9495429223"></ins>
-							<script>
-							     (adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-						</div>
-						<h3>onChange</h3>
-						<div class="well well-small">
-							<h4>- Execute function after change</h4>
-							<br>
-<pre><code class="language-javascript">$(<span class="str">":file"</span>).jfilestyle({
-   <span class="str">'onChange'</span>: function (files) {
-      console.log(files)
-   }
+					<h1 class="text-center titlePage">Events</h1>
+					<h2>onShow</h2>
+					<h3><b>Type</b>: Function</h3>
+					<p>Executes a function before displaying the message</p>
+					<p><button type="button" class="btn btn-primary" id="onShow">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	onShow: function () {
+		alert('show');
+	}
 });
 </code></pre>
-						</div>
-					</section>
-					<section>
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<ins class="adsbygoogle"
-						     style="display:block; text-align:center;"
-						     data-ad-format="fluid"
-						     data-ad-layout="in-article"
-						     data-ad-client="ca-pub-8894792596723869"
-						     data-ad-slot="9495429223"></ins>
-						<script>
-						     (adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</section>
-        		</div>
-        	</div>
-        </div>
-        <footer></footer>
+					</div>
+
+					<h2>onHide</h2>
+					<h3><b>Type</b>: Function</h3>
+					<p>Executes a function after hiding the message</p>
+					<p><button type="button" class="btn btn-primary" id="onHide">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	onHide: function () {
+		alert('hide');
+	}
+});
+</code></pre>
+					</div>
+				</div>
+			</div>
+			<br>
+        	<footer></footer>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/prism.js" charset="utf-8"></script>
-        <script type="text/javascript" src="js/jquery-filestyle.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/bird-alert.min.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
+		<script>
+			var birdAlert = new BirdAlert();
 
-            ga('create', 'UA-42464483-2', 'markusslima.github.io');
-            ga('send', 'pageview');
-        </script>
+			$('#onShow').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					onShow: function () {
+						alert('show');
+					}
+				});
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'onShow', 
+					className: 'info'
+				});
+			});
+
+			$('#onHide').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					onHide: function () {
+						alert('hide');
+					}
+				});
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'onHide', 
+					className: 'info'
+				});
+			});
+
+		</script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-42464483-5');
+		</script>
     </body>
 </html>
