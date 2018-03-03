@@ -29,35 +29,52 @@
 		<div class="container" id="geral">
 			<div class="row">
 				<div class="col">
-					<h2>About</h2>
-					<p>Tired of the notification plugins that something is always missing? <b>Bird Alert</b> came to save your life. Fully customizable and easy to use, now your application will have beautiful alert messages.</p>
-
-					<h2>Get Bird Alert</h2>
-					<p>
-						<a href="https://github.com/markusslima/bird-alert" class="btn btn-secondary"><span class="oi oi-random"></span> Project on Github </a>
-						<a href="https://github.com/markusslima/bird-alert/releases/tag/v1.0.0" class="btn btn-primary"><span class="oi oi-data-transfer-download"></span> Download Version 1.0.0</a>
-					</p>
-
-					<h2>Requirements</h2>
-					<p> <a href="https://jquery.com">jQuery</a> and <a href="https://daneden.github.io/animate.css/">Animate CSS</a> </p>
-
-					<h2>Install</h2>
+					<h1 class="text-center titlePage">Methods</h1>
+					<h2>.notify()</h2>
+					<h3><b>.notify</b>({<b>title</b>: String, <b>msg</b>: String, <b>className</b>: String});</h3>
+					<p>Method used to display the message</p>
+					<p><button type="button" class="btn btn-primary" id="notify">Example</button></p>
 					<div>
-<pre><code class="language-html">&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Bird Alert&lt;/title&gt;
-    &lt;link rel="stylesheet" href="animate.css"&gt;
-    &lt;link rel="stylesheet" href="bird-alert.css"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="bird-alert.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;html&gt;
+<pre><code class="language-javascript">var birdAlert = new BirdAlert();
+birdAlert.notify({
+	msg: 'Mensage success!!!', 
+	title: 'Success', 
+	className: 'success'
+});
+</code></pre>
+					</div>
+
+					<h2>.set()</h2>
+					<h3><b>.set</b>({<b>option</b>: value [<b>, option</b>: value]})</h3>
+					<p>Updates the current object options</p>
+					<p><button type="button" class="btn btn-primary" id="set">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert();
+birdAlert.set({
+	zIndex: 2100,
+	clickToHide: false,
+	showAnimation: 'fadeIn',
+	autoHide: false
+});
+</code></pre>
+					</div>
+
+					<h2>.setDefaults()</h2>
+					<h3><b>.set</b>()</h3>
+					<p>Returns all options to their default value</p>
+					<p><button type="button" class="btn btn-primary" id="setDefaults">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	clickToHide: false,
+	showAnimation: 'fadeIn',
+});
+birdAlert.setDefaults();
 </code></pre>
 					</div>
 				</div>
 			</div>
+			<br>
+        	<footer></footer>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -68,6 +85,51 @@
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
+		<script>
+			var birdAlert = new BirdAlert({zIndex: 1200});
+
+			$('#notify').on('click', function () {
+				birdAlert.notify({
+					msg: 'Mensage success!!!', 
+					title: 'Success', 
+					className: 'success'
+				});
+			});
+
+			$('#set').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					clickToHide: false,
+					showAnimation: 'fadeIn',
+					autoHide: false
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'Set', 
+					className: 'info'
+				});
+			});
+
+			$('#setDefaults').on('click', function () {
+				birdAlert.set({
+					zIndex: 2100,
+					clickToHide: false,
+					showAnimation: 'fadeIn',
+					autoHide: false
+				})
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100
+				});
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'Set Defaults', 
+					className: 'info'
+				});
+			});
+
+		</script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
