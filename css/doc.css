@@ -1,7 +1,6 @@
-
 @font-face {
-    font-family: A_Perfect_Place;
-    src: url(fonts/A_Perfect_Place.ttf);
+    font-family: Curely-Free-Typeface;
+    src: url(fonts/Curely-Free-Typeface.ttf);
 }
 
 * {
@@ -11,9 +10,9 @@
 }
 
 body {
-    background: #6dd3e7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4fd7ff), to(#ffe099)) fixed;
     margin-top: 140px;
-  	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .bg-dark {
@@ -27,11 +26,11 @@ body {
 }
 
 .title {
-	font-family: A_Perfect_Place;
+	font-family: Curely-Free-Typeface;
     position: absolute;
     top: 300px;
     font-size: 10em;
-    color: #00617d;
+    color: #1183c7;
     text-align: center;
     width: 100%;
     z-index: 10;
@@ -46,11 +45,10 @@ body {
 }
 
 #geral h2 {
-	margin: 30px 20px 10px;
-    font-weight: 100;
-    font-family: A_Perfect_Place;
-    font-size: 4em;
-    color: #e49400;
+	margin: 40px 20px 10px;
+    font-family: Curely-Free-Typeface;
+    font-size: 2.6em;
+    color: #ff8e2a;
 }
 #geral p {
 	font-size: 1.6em;
@@ -80,6 +78,7 @@ body {
     left: 50%;
     margin-left: -64px;
     z-index: 8;
+    filter: brightness(110%);
 }
 
 .cloud {
@@ -218,4 +217,10 @@ body {
   	100% {
   	  left: 120%;
   	}
+}
+
+
+
+pre[class*="language-"] {
+    margin: 20px;
 }
