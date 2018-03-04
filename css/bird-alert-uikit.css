@@ -1,3 +1,13 @@
+/*
+ * bird-alert
+ * doc: http://markusslima.github.io/bird-alert/
+ * github: https://github.com/markusslima/bird-alert
+ *
+ * Copyright (c) 2018 Markus Vinicius da Silva Lima
+ * Version 1.0.1
+ * Licensed under the MIT license.
+ * UIKit Theme
+ */
 .birdAlert .container-birdAlert {
 	width: auto;
 	background: #fff;
@@ -16,7 +26,7 @@
 	position: absolute;
     right: 10px;
     font-size: 38px;
-    top: -5px;
+    margin-top: -20px;
     cursor: pointer;
     font-weight: 100;
     font-style: normal;
