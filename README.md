@@ -1,5 +1,5 @@
 
-# [Bird Alert v1.0.0](https://markusslima.github.io/bird-alert/)
+# [Bird Alert v1.0.1](https://markusslima.github.io/bird-alert/)
 
 The **Bird Alert** is done for you who need practicality and versatility to display messages in your projects. 
 
