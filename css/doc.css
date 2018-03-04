@@ -277,7 +277,7 @@ pre[class*="language-"] {
         top: 180px;
     }
     .title {
-        font-size: 5.5em;
+        font-size: 5em;
     }
 
     .titlePage {
@@ -285,8 +285,7 @@ pre[class*="language-"] {
     }
 
     .subtitle {
-        top: 405px;
-        font-size: 1em;
+        display: none;
     }
 
     .cloud {
