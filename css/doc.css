@@ -270,6 +270,9 @@ pre[class*="language-"] {
 
 
 @media only screen and (max-width: 800px) {
+    #geral {
+        top: 550px;
+    }
     .title {
         font-size: 6em;
     }
@@ -279,7 +282,7 @@ pre[class*="language-"] {
     }
 
     .subtitle {
-        top: 440px;
+        top: 500px;
         font-size: 1em;
     }
 
