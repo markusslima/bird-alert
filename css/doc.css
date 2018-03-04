@@ -190,6 +190,7 @@ body {
     z-index: 9;
  	opacity: 0.95; 
 }
+
 .cloud div {
   	-moz-box-shadow: inset -2px -3px 0 0 #f7e7eb;
   	-webkit-box-shadow: inset -2px -3px 0 0 #f7e7eb;
@@ -265,4 +266,25 @@ body {
 
 pre[class*="language-"] {
     margin: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .title {
+        font-size: 6em;
+    }
+
+    .titlePage {
+        font-size: 3.5em;
+    }
+
+    .subtitle {
+        top: 440px;
+        font-size: 1em;
+    }
+
+    .cloud {
+        zoom: 0.7;
+        height: 9px;
+    }
 }
