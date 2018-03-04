@@ -4,7 +4,7 @@
  * github: https://github.com/markusslima/bird-alert
  *
  * Copyright (c) 2018 Markus Vinicius da Silva Lima
- * Version 1.0.0
+ * Version 1.0.1
  * Licensed under the MIT license.
  */
 function BirdAlert(options) {
@@ -114,9 +114,9 @@ function BirdAlert(options) {
     };
 
     var hideElement = function (el) {
-        options.onHide();
         el.removeClass(options.showAnimation).addClass(options.hideAnimation);
         el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+            options.onHide();
             el.remove();
         });
     };
