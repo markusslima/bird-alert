@@ -15,9 +15,13 @@ body {
     overflow-x: hidden;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+}
+
 inc.adsbygoogle {
-  margin-left: 20px;
-  margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .blockWindow {

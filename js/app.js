@@ -12,6 +12,7 @@ $(document).ready(function () {
 				 + '			        </a>'
 				 + '			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">'
 				 + '			            <a class="dropdown-item" href="http://markusslima.github.io/bootstrap-filestyle/">Bootstrap FileStyle</a>'
+				 + '					    <a class="dropdown-item" href="http:http://markusslima.github.io/jquery-filestyle/">jQuery FileStyle</a>'
 				 + '					    <a class="dropdown-item" href="http://markusslima.github.io/easy-z-modal/">Easy-Z modal</a>'
 				 + '			        </div>'
 				 + '			    </li>'
