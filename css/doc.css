@@ -271,10 +271,10 @@ pre[class*="language-"] {
 
 @media only screen and (max-width: 800px) {
     #geral {
-        top: 550px;
+        margin-top: 550px;
     }
     .title {
-        font-size: 6em;
+        font-size: 5.5em;
     }
 
     .titlePage {
