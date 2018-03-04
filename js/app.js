@@ -40,54 +40,6 @@ $(document).ready(function () {
 
 	$('body').prepend(menuHTML);
 
-	var sky = '<div class="cloud normal"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud large"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud small"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud tiny"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud large"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud normal"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud small"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud tiny"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud small"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud normal"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud tiny"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud large"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud small"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud tiny"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div> '+
-			  '<div class="cloud large"> '+
-			  '  <div></div><div></div><div></div><div></div> '+
-			  '</div>';
-
-	$('.sky').prepend(sky);
-
 	var htmlFooter = '<div class="container">'
 				   + '	<div class="row">'
 				   + '		<div class="col text-center">'
@@ -99,13 +51,56 @@ $(document).ready(function () {
 	$('footer').html(htmlFooter);
 
 
-	var htmlHeader = '<div class="container">'
-				   + '	<div class="row">'
-				   + '		<div class="col text-center">'
-				   + '			<img src="img/logo.png">'
-				   + '		</div>'
-				   + '	</div>'
-				   + '</div>'
+	var htmlHeader = '<h1 class="title">Bird Alert</h1>'+
+				     '<h3 class="subtitle">Jquery plugin for displaying beautiful messages on your web system</h3>'+
+				     '<div class="sky">'+
+					 '  <div class="cloud normal"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud large"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud small"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud tiny"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud large"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud normal"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud small"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud tiny"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud small"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud normal"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud tiny"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud large"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud small"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud tiny"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div> '+
+					 '  <div class="cloud large"> '+
+					 '    <div></div><div></div><div></div><div></div> '+
+					 '  </div>'+
+					 '</div>'+
+					 '<img src="img/bird-128x128.gif" class="bird">';
 	$('header').html(htmlHeader);
 
 	var d = new Date();
