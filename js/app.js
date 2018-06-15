@@ -8,7 +8,7 @@ $(document).ready(function () {
 	  			 + '		  	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">'
 	  			 + '				<li class="nav-item dropdown">'
 				 + '			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
-				 + '			          	More plugins'
+				 + '			          	More plugins <span class="badge badge-primary">New plugin</span>' 
 				 + '			        </a>'
 				 + '			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">'
 				 + '					    <a class="dropdown-item" target="_blank" href="https://markusslima.github.io/super-monthpicker">Super Month Picker <span class="badge badge-primary">New</span></a>'
