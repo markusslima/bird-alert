@@ -8,14 +8,14 @@
 		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>Bird Alert - Events - Jquery plugin for displaying beautiful messages on your web system</title>
+		<title>Bird Alert - Themes - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/bird-alert.css">
+		<link id="css" rel="stylesheet" href="css/bird-alert.css">
 		<link rel="stylesheet" href="css/doc.css">
 		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
 	</head>
@@ -24,7 +24,7 @@
 		<div class="container" id="geral">
 			<div class="row">
 				<div class="col">
-					<h1 class="text-center titlePage">Events</h1>
+					<h1 class="text-center titlePage">Themes</h1>
 					<br>
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 					<ins class="adsbygoogle"
@@ -37,31 +37,30 @@
 					     (adsbygoogle = window.adsbygoogle || []).push({});
 					</script>
 					<br>
-					<h2>onShow</h2>
-					<h3><b>Type</b>: Function</h3>
-					<p>Executes a function before displaying the message</p>
-					<p><button type="button" class="btn btn-primary" id="onShow">Example</button></p>
+					<br>
+					<p>Load theme css</p>
 					<div>
-<pre><code class="language-javascript">var birdAlert = new BirdAlert({
-	onShow: function () {
-		alert('show');
-	}
-});
+<pre><code class="language-html"> &lt;head&gt;
+    &lt;title&gt;Bird Alert&lt;/title&gt;
+    &lt;link rel="stylesheet" href="bird-alert-bootstrap.css"&gt;
+  &lt;/head&gt;
 </code></pre>
-					</div>
-
-					<h2>onHide</h2>
-					<h3><b>Type</b>: Function</h3>
-					<p>Executes a function after hiding the message</p>
-					<p><button type="button" class="btn btn-primary" id="onHide">Example</button></p>
-					<div>
-<pre><code class="language-javascript">var birdAlert = new BirdAlert({
-	onHide: function () {
-		alert('hide');
-	}
-});
-</code></pre>
-					</div>
+					<h2>Default</h2>
+					<p><a href="theme-default.html">View examples</a></p>
+					<h2>Bootstrap</h2>
+					<p><a href="theme-bootstrap.html">View examples</a></p>
+					<h2>Foundation</h2>
+					<p><a href="theme-foundation.html">View examples</a></p>
+					<h2>Metro</h2>
+					<p><a href="theme-metro.html">View examples</a></p>
+					<h2>Semantic UI</h2>
+					<p><a href="theme-semantic-ui.html">View examples</a></p>
+					<h2>Bulma</h2>
+					<p><a href="theme-bulma.html">View examples</a></p>
+					<h2>UiKit</h2>
+					<p><a href="theme-uikit.html">View examples</a></p>
+					<h2>Siimple</h2>
+					<p><a href="theme-siimple.html">View examples</a></p>
 					<br>
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 					<ins class="adsbygoogle"
@@ -87,40 +86,6 @@
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
-		<script>
-			var birdAlert = new BirdAlert();
-
-			$('#onShow').on('click', function () {
-				birdAlert.setDefaults();
-				birdAlert.set({
-					zIndex: 2100,
-					onShow: function () {
-						alert('show');
-					}
-				});
-				birdAlert.notify({
-					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
-					title: 'onShow', 
-					className: 'info'
-				});
-			});
-
-			$('#onHide').on('click', function () {
-				birdAlert.setDefaults();
-				birdAlert.set({
-					zIndex: 2100,
-					onHide: function () {
-						alert('hide');
-					}
-				});
-				birdAlert.notify({
-					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
-					title: 'onHide', 
-					className: 'info'
-				});
-			});
-
-		</script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}

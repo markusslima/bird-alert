@@ -1,7 +1,6 @@
-
 @font-face {
-    font-family: A_Perfect_Place;
-    src: url(fonts/A_Perfect_Place.ttf);
+    font-family: Curely-Free-Typeface;
+    src: url(fonts/Curely-Free-Typeface.ttf);
 }
 
 * {
@@ -11,9 +10,35 @@
 }
 
 body {
-    background: #6dd3e7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4fd7ff), to(#ffe099)) fixed;
     margin-top: 140px;
-  	overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+}
+
+.adsbygoogle {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.blockWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 2500;
+}
+
+.blockWindow h1 {
+    color: #fff;
+    font-size: 5em;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 .bg-dark {
@@ -27,14 +52,22 @@ body {
 }
 
 .title {
-	font-family: A_Perfect_Place;
+	font-family: Curely-Free-Typeface;
     position: absolute;
     top: 300px;
     font-size: 10em;
-    color: #00617d;
+    color: #1183c7;
     text-align: center;
     width: 100%;
     z-index: 10;
+}
+
+.titlePage {
+    font-family: Curely-Free-Typeface;
+    font-size: 4em;
+    margin-top: 30px;
+    text-decoration: underline;
+    color: darkgray;
 }
 
 #geral {
@@ -46,11 +79,18 @@ body {
 }
 
 #geral h2 {
-	margin: 30px 20px 10px;
+	margin: 40px 20px 10px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
     font-weight: 100;
-    font-family: A_Perfect_Place;
-    font-size: 4em;
-    color: #e49400;
+    font-size: 2.6em;
+    color: #ff8e2a;
+}
+
+#geral h3 {
+    font-size: 1.1em;
+    color: #a0a0a0;
+    margin: -5px 20px 20px;
+    font-weight: normal;
 }
 #geral p {
 	font-size: 1.6em;
@@ -70,7 +110,7 @@ body {
     width: 100%;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
     z-index: 10;
 }
 
@@ -80,6 +120,7 @@ body {
     left: 50%;
     margin-left: -64px;
     z-index: 8;
+    filter: brightness(110%);
 }
 
 .cloud {
@@ -149,6 +190,7 @@ body {
     z-index: 9;
  	opacity: 0.95; 
 }
+
 .cloud div {
   	-moz-box-shadow: inset -2px -3px 0 0 #f7e7eb;
   	-webkit-box-shadow: inset -2px -3px 0 0 #f7e7eb;
@@ -218,4 +260,36 @@ body {
   	100% {
   	  left: 120%;
   	}
+}
+
+
+
+pre[class*="language-"] {
+    margin: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #geral {
+        margin-top: 520px;
+    }
+    .bird {
+        top: 110px;
+    }
+    .title {
+        font-size: 5em;
+    }
+
+    .titlePage {
+        font-size: 3.5em;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .cloud {
+        zoom: 0.7;
+        height: 9px;
+    }
 }

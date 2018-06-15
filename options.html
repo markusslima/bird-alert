@@ -4,251 +4,404 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="jQuery Filestyle - jQuery Customization of input html file - Customization of upload">
-		<meta name="keywords" content="jquery filestyle customization input html file upload">
+		<meta name="description" content="Bird Alert - Jquery plugin for displaying beautiful messages on your web system">
+		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>jQuery Filestyle - jQuery Customization of input html file - Customization of upload</title>
+		<title>Bird Alert - Options - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
-		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Montserrat|Quicksand|Space+Mono" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link href="css/doc.css" rel="stylesheet">
-		<link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/jquery-filestyle.min.css">
-
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bird-alert.css">
+		<link rel="stylesheet" href="css/doc.css">
+		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
 	</head>
-
-    <body>
+	<body>
 		<header></header>
-        <div class="container">
-        	<div class="row">
+		<div class="container" id="geral">
+			<div class="row">
 				<div class="col">
-					<section>
-						<div class="page-header">
-							<h1>Options</h1>
-							<hr>
-							<br>
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-							     style="display:block; text-align:center;"
-							     data-ad-format="fluid"
-							     data-ad-layout="in-article"
-							     data-ad-client="ca-pub-8894792596723869"
-							     data-ad-slot="9495429223"></ins>
-							<script>
-							     (adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-						</div>
-						<h3>theme <div><strong>Type:</strong> String, <strong>Default:</strong> "default"</div></h3>
-						<div class="well well-small">
-							<h4>- Choose theme <b>blue</b>, <b>green</b>, <b>yellow</b>, <b>red</b>, <b>black</b>, <b>purple</b> and <b>asphalt</b>.</h4>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({theme: "blue"});
+					<h1 class="text-center titlePage">Options</h1>
+					<br>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block; text-align:center;"
+					     data-ad-layout="in-article"
+					     data-ad-format="fluid"
+					     data-ad-client="ca-pub-8894792596723869"
+					     data-ad-slot="3239538878"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					<br>
+					<h2>clickToHide</h2>
+					<h3><b>Type</b>: Boolean, <b>Default</b>: true</h3>
+					<p>Enables or disables hiding with a click in the box</p>
+					<p><button type="button" class="btn btn-primary" id="clickToHide">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	clickToHide: false
+});
 </code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-theme="blue"&gt;
-</code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form">
-								<div class="row">
-									<div class="col">
-										<input type="file" class="jfilestyle" data-theme="blue" data-text="blue">
-										<br>
-										<input type="file" class="jfilestyle" data-theme="green" data-text="green">
-										<br>
-										<input type="file" class="jfilestyle" data-theme="yellow" data-text="yellow">
-										<br>
-										<input type="file" class="jfilestyle" data-theme="red" data-text="red">
-									</div>
-									<div class="col">
-										<input type="file" class="jfilestyle" data-theme="black" data-text="black">
-										<br>
-										<input type="file" class="jfilestyle" data-theme="purple" data-text="purple">
-										<br>
-										<input type="file" class="jfilestyle" data-theme="asphalt" data-text="asphalt">
-									</div>
-								</div>
-							</form>
-						</div>
+					</div>
 
-						<h3>dragdrop <div><strong>Type:</strong> Boolean, <strong>Default:</strong> true</div></h3>
-						<div class="well well-small">
-							<h4>- Enables or disables drag and drop selected files.</h4>
-							<br>
-							<div class="alert alert-warning" role="alert">
-							  	When enabling the drag and drop event multiple file selection is enabled. That is, you can not limit the amount of uploaded files in your upload using drag and drop.
-							</div>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({dragdrop: false});
+					<h2>closeButton</h2>
+					<h3><b>Type</b>: Boolean, <b>Default</b>: true</h3>
+					<p>Hide or show close button</p>
+					<p><button type="button" class="btn btn-primary" id="closeButton">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	closeButton: false
+});
 </code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-dragdrop="false"&gt;
-</code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form">
-								<input type="file" class="jfilestyle" data-dragdrop="false">
-							</form>
-						</div>
+					</div>
 
-						<h3>input <div><strong>Type:</strong> Boolean, <strong>Default:</strong> true</div></h3>
-						<div class="well well-small">
-							<h4>- Enables or disables the input text.</h4>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({input: false});
+					<h2>autoHide</h2>
+					<h3><b>Type</b>: Boolean, <b>Default</b>: true</h3>
+					<p>Enable or disable hide message automatically</p>
+					<p><button type="button" class="btn btn-primary" id="autoHide">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	autoHide: false
+});
 </code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-input="false"&gt;
-</code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form">
-								<input type="file" class="jfilestyle" data-input="false">
-							</form>
-						</div>
+					</div>
 
-						<h3>text <div><strong>Type:</strong> String, <strong>Default:</strong> "Choose file"</div></h3>
-						<div class="well well-small">
-							<h4>- Changes the button text.</h4>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({text: "Find file"});
+					<h2>duration</h2>
+					<h3><b>Type</b>: Integer, <b>Default</b>: 5000</h3>
+					<p>Time in milliseconds for the duration of the message</p>
+					<p><button type="button" class="btn btn-primary" id="duration">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	duration: 1000
+});
 </code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-text="Find file"&gt;
-</code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form-inline">
-								<input type="file" class="jfilestyle" data-text="Find file">
-							</form>
-						</div>
-		                
-		                <h3>disabled <div><strong>Type:</strong> Boolean, <strong>Default:</strong> false</div></h3>
-						<div class="well well-small">
-							<h4>- Disabled button.</h4>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({disabled: true});
-</code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-disabled="true"&gt;
-</code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form-inline">
-								<input type="file" class="jfilestyle" data-disabled="true">
-							</form>
-						</div>
+					</div>
 
-						<br>
-						<section>
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-							     style="display:block; text-align:center;"
-							     data-ad-format="fluid"
-							     data-ad-layout="in-article"
-							     data-ad-client="ca-pub-8894792596723869"
-							     data-ad-slot="9495429223"></ins>
-							<script>
-							     (adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-						</section>
-		                
-		                
-		                <h3>buttonBefore <div><strong>Type:</strong> Boolean, <strong>Default:</strong> false</div></h3>
-						<div class="well well-small">
-							<h4>- Button before.</h4>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({buttonBefore: true});
+					<h2>showAnimation</h2>
+					<h3><b>Type</b>: String, <b>Default</b>: 'flipInX'</h3>
+					<p>Choose from the <b>Animate CSS</b> animations available to show the message</p>
+					<p><button type="button" class="btn btn-primary" id="showAnimation">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	showAnimation: 'fadeIn'
+});
 </code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-buttonBefore="true"&gt;
+					</div>
+
+					<h2>hideAnimation</h2>
+					<h3><b>Type</b>: String, <b>Default</b>: 'flipOutX'</h3>
+					<p>Choose from the <b>Animate CSS</b> animations available to hide the message</p>
+					<p><button type="button" class="btn btn-primary" id="hideAnimation">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	hideAnimation: 'fadeOut'
+});
 </code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form-inline">
-								<input type="file" class="jfilestyle" data-buttonBefore="true">
-							</form>
-						</div>
-                
-			
-						<h3>inputSize <div><strong>Type:</strong> String, <strong>Default:</strong> "200px"</div></h3>
-						<div class="well well-small">
-							<h4>- Change width of the input. Use units of measurement css.</h4>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({inputSize: "400px"});
+					</div>
+					<br>
+
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block; text-align:center;"
+					     data-ad-layout="in-article"
+					     data-ad-format="fluid"
+					     data-ad-client="ca-pub-8894792596723869"
+					     data-ad-slot="3239538878"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					<br>
+
+					<h2>inverseInsert</h2>
+					<h3><b>Type</b>: Boolean, <b>Default</b>: false</h3>
+					<p>Enables or disables new messages to be inserted below the old ones</p>
+					<p><button type="button" class="btn btn-primary" id="inverseInsert">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	inverseInsert: true
+});
 </code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-inputSize="400px"&gt;
+					</div>
+
+					<h2>preventDuplicate</h2>
+					<h3><b>Type</b>: Boolean, <b>Default</b>: false</h3>
+					<p>Blocks duplicate messages</p>
+					<p><button type="button" class="btn btn-primary" id="preventDuplicate">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	preventDuplicate: true
+});
 </code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form-inline">
-								<input type="file" class="jfilestyle" data-inputSize="400px">
-							</form>
-						</div>
+					</div>
+
+					<h2>position</h2>
+					<h3><b>Type</b>: String, <b>Default</b>: 'top right'</h3>
+					<p>Sets the message position on the screen</p>
+					<p><button type="button" class="btn btn-primary" id="position">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	position: 'bottom center'
+});
+</code></pre>
+					</div>
+
+					<h2>quantity</h2>
+					<h3><b>Type</b>: Integer, <b>Default</b>: 7</h3>
+					<p>Limit the number of messages displayed</p>
+					<p><button type="button" class="btn btn-primary" id="quantity">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	quantity: 3
+});
+</code></pre>
+					</div>
 					
-						<h3>placeholder <div><strong>Type:</strong> String, <strong>Default:</strong> ""</div></h3>
-						<div class="well well-small">
-							<h4>- Set input placeholder.</h4>
-							<br>
-							<b>Via JavaScript</b>
-<pre><code class="language-javascript">$(":file").jfilestyle({placeholder: "My place holder"});
+					<h2>agroup</h2>
+					<h3><b>Type</b>: Boolean, <b>Default</b>: true</h3>
+					<p>Enables or disables message grouping by displaying only one message at a time</p>
+					<p><button type="button" class="btn btn-primary" id="agroup">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	agroup: false
+});
 </code></pre>
-							<b>Via Data attributes</b>
-<pre><code class="language-html">&lt;input type="file" class="jfilestyle" data-placeholder="My place holder"&gt;
+					</div>
+
+					<h2>width</h2>
+					<h3><b>Type</b>: Integer, <b>Default</b>: 400</h3>
+					<p>Sets the width of the message box</p>
+					<p><button type="button" class="btn btn-primary" id="width">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	width: 800
+});
 </code></pre>
-							<br>
-							<p>Example:</p>
-							<form class="form-inline">
-								<input type="file" class="jfilestyle" data-placeholder="My place holder">
-							</form>
-						</div>
-					</section>
-					<section>
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<ins class="adsbygoogle"
-						     style="display:block; text-align:center;"
-						     data-ad-format="fluid"
-						     data-ad-layout="in-article"
-						     data-ad-client="ca-pub-8894792596723869"
-						     data-ad-slot="9495429223"></ins>
-						<script>
-						     (adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</section>
-        		</div>
-        	</div>
-        </div>
-        <footer></footer>
+					</div>
+
+					<h2>zIndex</h2>
+					<h3><b>Type</b>: Integer, <b>Default</b>: 1000</h3>
+					<p>Sets the width of the message box</p>
+					<p><button type="button" class="btn btn-primary" id="zIndex">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	zIndex: 3000
+});
+</code></pre>
+					</div>
+
+					<div class="blockWindow" style="display: none;"><h1>z-index: 2500</h1></div>
+					<br>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block; text-align:center;"
+					     data-ad-layout="in-article"
+					     data-ad-format="fluid"
+					     data-ad-client="ca-pub-8894792596723869"
+					     data-ad-slot="3239538878"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+			<br>
+        	<footer></footer>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/prism.js" charset="utf-8"></script>
-        <script type="text/javascript" src="js/jquery-filestyle.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/bird-alert.min.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
+		<script>
+			var birdAlert = new BirdAlert();
 
-            ga('create', 'UA-42464483-2', 'markusslima.github.io');
-            ga('send', 'pageview');
-        </script>
+			$('#clickToHide').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					clickToHide: false
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'clickToHide', 
+					className: 'info'
+				});
+			});
+
+			$('#closeButton').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					closeButton: false
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'closeButton', 
+					className: 'info'
+				});
+			});
+
+			$('#autoHide').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					autoHide: false
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'autoHide', 
+					className: 'info'
+				});
+			});
+
+			$('#duration').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					duration: 1000
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'duration', 
+					className: 'info'
+				});
+			});
+
+			$('#showAnimation').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					showAnimation: 'fadeIn'
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'showAnimation', 
+					className: 'info'
+				});
+			});
+
+			$('#hideAnimation').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					hideAnimation: 'fadeOut'
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'hideAnimation', 
+					className: 'info'
+				});
+			});
+
+			$('#inverseInsert').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					inverseInsert: true
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'inverseInsert', 
+					className: 'info'
+				});
+			});
+
+			$('#preventDuplicate').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					preventDuplicate: true
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'preventDuplicate', 
+					className: 'info'
+				});
+			});
+
+			$('#position').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					position: 'bottom center'
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'position', 
+					className: 'info'
+				});
+			});
+
+			$('#quantity').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					quantity: 3
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'quantity', 
+					className: 'info'
+				});
+			});
+
+			$('#agroup').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					agroup: false
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'agroup', 
+					className: 'info'
+				});
+			});
+
+			$('#width').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					width: 800
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'width', 
+					className: 'info'
+				});
+			});
+			
+			$('#zIndex').on('click', function () {
+				$('.blockWindow').show();
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 3000,
+					onHide: function () {
+						setTimeout(function () {
+							$('.blockWindow').hide();
+						}, 500);
+					}
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'zIndex: 3000', 
+					className: 'info'
+				});
+			});
+		</script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-42464483-5');
+		</script>
     </body>
 </html>

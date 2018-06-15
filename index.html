@@ -8,87 +8,48 @@
 		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>Bird Alert - Jquery plugin for displaying beautiful messages on your web system</title>
+		<title>Bird Alert - Get Start - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bird-alert.css">
 		<link rel="stylesheet" href="css/doc.css">
 		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
 	</head>
 	<body>
-		<h1 class="title">Bird Alert</h1>
-		<h3 class="subtitle">Jquery plugin for displaying beautiful messages on your web system</h3>
-		<div class="sky">
-			<div class="cloud normal">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud normal">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud normal">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud small">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud tiny">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-			<div class="cloud large">
-			  <div></div><div></div><div></div><div></div>
-			</div>
-		</div>
-		<img src="imagens/bird-128x128.gif" class="bird">
-
-
+		<header></header>
 		<div class="container" id="geral">
 			<div class="row">
 				<div class="col">
+					<h1 class="text-center titlePage">Get start</h1>
 					<h2>About</h2>
-					<p>Tired of the notification plugins that something is always missing? Bird Alert came to save your life. Fully customizable and easy to use, now your application will have beautiful alert messages.</p>
+					<p>Tired of the notification plugins that something is always missing? <b>Bird Alert</b> came to save your life. Fully customizable and easy to use, now your application will have beautiful alert messages.</p>
 
 					<h2>Get Bird Alert</h2>
 					<p>
-						<a href="#" class="btn btn-secondary"><span class="oi oi-random"></span> Project on Github </a>
-						<a href="#" class="btn btn-primary"><span class="oi oi-data-transfer-download"></span> Download </a>
+						<a href="https://github.com/markusslima/bird-alert" class="btn btn-secondary" target="_target"><span class="oi oi-random"></span> Project on Github </a>
+						<a href="https://github.com/markusslima/bird-alert/archive/v1.0.1.zip" class="btn btn-primary" target="_target"><span class="oi oi-data-transfer-download"></span> Download Version 1.0.1</a>
 					</p>
-
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block; text-align:center;"
+					     data-ad-layout="in-article"
+					     data-ad-format="fluid"
+					     data-ad-client="ca-pub-8894792596723869"
+					     data-ad-slot="3239538878"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					<br>
 					<h2>Requirements</h2>
-					<p> <a href="https://jquery.com">jQuery</a> and <a href="https://daneden.github.io/animate.css/">Animate CSS</a> </p>
+					<p> <a href="https://jquery.com" target="_target">jQuery</a> and <a href="https://daneden.github.io/animate.css/" target="_target">Animate CSS</a> </p>
 
 					<h2>Install</h2>
-					<p>
-<pre><code class="language-html">// Via JavaScript:
-&lt;html&gt;
+					<div>
+<pre><code class="language-html">&lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Bird Alert&lt;/title&gt;
     &lt;link rel="stylesheet" href="animate.css"&gt;
@@ -96,32 +57,68 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="bird-alert.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="bird-alert.min.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;html&gt;
 </code></pre>
-						<br>
-						<p>Example</p>
-						<button type="button" class="btn btn-primary" id="mensage"> Show mensage </button>
-					</p>
+					</div>
+
+					<h2>Usage</h2>
+					<p><button type="button" class="btn btn-primary" id="btnBasic">Show alert</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({zIndex: 2100});
+
+$('#btnBasic').on('click', function () {
+	birdAlert.notify({
+		msg: 'Basic mensage', 
+		title: 'Success', 
+		className: 'success'
+	});
+});
+</code></pre>
+					</div>
+					<br>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block; text-align:center;"
+					     data-ad-layout="in-article"
+					     data-ad-format="fluid"
+					     data-ad-client="ca-pub-8894792596723869"
+					     data-ad-slot="3239538878"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
 				</div>
 			</div>
+			<br>
+        	<footer></footer>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/prism.js" charset="utf-8"></script>
-        <script type="text/javascript" src="js/jquery-filestyle.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/bird-alert.min.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
+		<script>
+			var birdAlert = new BirdAlert({zIndex: 2100});
 
-            ga('create', 'UA-42464483-2', 'markusslima.github.io');
-            ga('send', 'pageview');
-        </script>
+			$('#btnBasic').on('click', function () {
+				birdAlert.notify({
+					msg: 'Basic mensage', 
+					title: 'Success', 
+					className: 'success'
+				});
+			});
+		</script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-42464483-5');
+		</script>
     </body>
 </html>

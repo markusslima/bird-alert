@@ -4,188 +4,173 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="jQuery Filestyle - jQuery Customization of input html file - Customization of upload">
-		<meta name="keywords" content="jquery filestyle customization input html file upload">
+		<meta name="description" content="Bird Alert - Jquery plugin for displaying beautiful messages on your web system">
+		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>jQuery Filestyle - jQuery Customization of input html file - Customization of upload</title>
+		<title>Bird Alert - Methods - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
-		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Montserrat|Quicksand|Space+Mono" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link href="css/doc.css" rel="stylesheet">
-		<link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/jquery-filestyle.min.css">
-
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bird-alert.css">
+		<link rel="stylesheet" href="css/doc.css">
+		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
 	</head>
-
-    <body>
+	<body>
 		<header></header>
-        <div class="container">
-        	<div class="row">
+		<div class="container" id="geral">
+			<div class="row">
 				<div class="col">
-					<section>
-						<div class="page-header">
-							<h1>Methods</h1>
-							<hr>
-							<br>
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-							     style="display:block; text-align:center;"
-							     data-ad-format="fluid"
-							     data-ad-layout="in-article"
-							     data-ad-client="ca-pub-8894792596723869"
-							     data-ad-slot="9495429223"></ins>
-							<script>
-							     (adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-						</div>
-						<h3>theme</h3>
-						<div class="well well-small">
-							<h4>- Set or get the theme.</h4>
-							<br>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('theme');
-// set
-$(":file").jfilestyle('theme', 'blue');
-</code></pre>
-						</div>
-						<h3>dragdrop</h3>
-						<div class="well well-small">
-							<h4>- Set or get the dragdrop selected files.</h4>
-							<br>
-							<div class="alert alert-warning" role="alert">
-							  	When enabling the drag and drop event multiple file selection is enabled. That is, you can not limit the amount of uploaded files in your upload using drag and drop.
-							</div>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('dragdrop');
-// set
-$(":file").jfilestyle('dragdrop', false);
-</code></pre>
-						</div>
-
-						<h3>clear</h3>
-						<div class="well well-small">
-							<h4>- Clear selected files.</h4>
-<pre><code class="language-javascript">$(":file").jfilestyle('clear');
-</code></pre>
-						</div>
-
-						<h3>destroy</h3>
-						<div class="well well-small">
-							<h4>- Destroy a filestyle completely.</h4>
-<pre><code class="language-javascript">$(":file").jfilestyle('destroy');
-</code></pre>
-						</div>
-
-						<h3>input</h3>
-						<div class="well well-small">
-							<h4>- Set or get the value of the input option.</h4>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('input');
-// set
-$(":file").jfilestyle('input', false);
-</code></pre>
-						</div>
-
-						<h3>text</h3>
-						<div class="well well-small">
-							<h4>- Set or get the text of the button.</h4>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('text');
-// set
-$(":file").jfilestyle('text', 'My text');
-</code></pre>
-						</div>
-		                <br>
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<ins class="adsbygoogle"
-						     style="display:block; text-align:center;"
-						     data-ad-format="fluid"
-						     data-ad-layout="in-article"
-						     data-ad-client="ca-pub-8894792596723869"
-						     data-ad-slot="9495429223"></ins>
-						<script>
-						     (adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-						<br>
-		                <h3>disabled</h3>
-						<div class="well well-small">
-							<h4>- Set or get the disabled button.</h4>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('disabled');
-// set
-$(":file").jfilestyle('disabled', true);
-</code></pre>
-						</div>
-		                
-		                <h3>buttonBefore</h3>
-						<div class="well well-small">
-							<h4>- Set or get the buttonBefore.</h4>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('buttonBefore');
-// set
-$(":file").jfilestyle('buttonBefore', true);
-</code></pre>
-						</div>
-		                
-		                <h3>inputSize</h3>
-						<div class="well well-small">
-							<h4>- Set or get the inputSize.</h4>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('inputSize');
-// set
-$(":file").jfilestyle('inputSize', '400px');
-</code></pre>
-						</div>
-
-						<h3>placeholder</h3>
-						<div class="well well-small">
-							<h4>- Set or get the placeholder.</h4>
-<pre><code class="language-javascript">// get
-$(":file").jfilestyle('placeholder');
-// set
-$(":file").jfilestyle('placeholder', 'My text placeholder');
-</code></pre>
-						</div>
-					</section>
+					<h1 class="text-center titlePage">Methods</h1>
 					<br>
-					<section>
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<ins class="adsbygoogle"
-						     style="display:block; text-align:center;"
-						     data-ad-format="fluid"
-						     data-ad-layout="in-article"
-						     data-ad-client="ca-pub-8894792596723869"
-						     data-ad-slot="9495429223"></ins>
-						<script>
-						     (adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</section>
-        		</div>
-        	</div>
-        </div>
-        <footer></footer>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block; text-align:center;"
+					     data-ad-layout="in-article"
+					     data-ad-format="fluid"
+					     data-ad-client="ca-pub-8894792596723869"
+					     data-ad-slot="3239538878"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					<br>
+					<h2>.notify()</h2>
+					<h3><b>.notify</b>({<b>title</b>: String, <b>msg</b>: String, <b>className</b>: String});</h3>
+					<p>Method used to display the message</p>
+					<p><button type="button" class="btn btn-primary" id="notify">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert();
+birdAlert.notify({
+	msg: 'Mensage success!!!', 
+	title: 'Success', 
+	className: 'success'
+});
+</code></pre>
+					</div>
+
+					<p>The <b>className</b> parameter is used to set the css class of the theme. You can add new classes to the theme in css. The default class are: <b>success</b>, <b>error</b>, <b>warning</b> and <b>info</b>.</p>
+					<div>
+<pre><code class="language-css">/* CSS */
+.birdAlert .container-birdAlert.myClass {
+	background: #dedede;
+	color: #a0a0a0;
+}
+</code></pre>
+<pre><code class="language-javascript">/* JavaScript */
+birdAlert.notify({
+	msg: 'Mensage bla bla bla!!!', 
+	title: 'My Mensage', 
+	className: 'myClass'
+});
+</code></pre>
+					</div>
+
+					<h2>.set()</h2>
+					<h3><b>.set</b>({<b>option</b>: value [<b>, option</b>: value]})</h3>
+					<p>Updates the current object options</p>
+					<p><button type="button" class="btn btn-primary" id="set">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert();
+birdAlert.set({
+	zIndex: 2100,
+	clickToHide: false,
+	showAnimation: 'fadeIn',
+	autoHide: false
+});
+</code></pre>
+					</div>
+
+					<h2>.setDefaults()</h2>
+					<h3><b>.set</b>()</h3>
+					<p>Returns all options to their default value</p>
+					<p><button type="button" class="btn btn-primary" id="setDefaults">Example</button></p>
+					<div>
+<pre><code class="language-javascript">var birdAlert = new BirdAlert({
+	clickToHide: false,
+	showAnimation: 'fadeIn'
+});
+birdAlert.setDefaults();
+</code></pre>
+					</div>
+					<br>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block; text-align:center;"
+					     data-ad-layout="in-article"
+					     data-ad-format="fluid"
+					     data-ad-client="ca-pub-8894792596723869"
+					     data-ad-slot="3239538878"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+			<br>
+        	<footer></footer>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/prism.js" charset="utf-8"></script>
-        <script type="text/javascript" src="js/jquery-filestyle.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/bird-alert.min.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
+		<script>
+			var birdAlert = new BirdAlert({zIndex: 1200});
 
-            ga('create', 'UA-42464483-2', 'markusslima.github.io');
-            ga('send', 'pageview');
-        </script>
+			$('#notify').on('click', function () {
+				birdAlert.notify({
+					msg: 'Mensage success!!!', 
+					title: 'Success', 
+					className: 'success'
+				});
+			});
+
+			$('#set').on('click', function () {
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100,
+					clickToHide: false,
+					showAnimation: 'fadeIn',
+					autoHide: false
+				})
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'Set', 
+					className: 'info'
+				});
+			});
+
+			$('#setDefaults').on('click', function () {
+				birdAlert.set({
+					zIndex: 2100,
+					clickToHide: false,
+					showAnimation: 'fadeIn',
+					autoHide: false
+				})
+				birdAlert.setDefaults();
+				birdAlert.set({
+					zIndex: 2100
+				});
+				birdAlert.notify({
+					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
+					title: 'Set Defaults', 
+					className: 'info'
+				});
+			});
+
+		</script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-42464483-5');
+		</script>
     </body>
 </html>

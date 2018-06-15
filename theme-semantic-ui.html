@@ -8,14 +8,14 @@
 		<meta name="keywords" content="Jquery plugin for displaying beautiful messages on your web system">
 		<meta name="author" content="Markus Lima">
 
-		<title>Bird Alert - Events - Jquery plugin for displaying beautiful messages on your web system</title>
+		<title>Bird Alert - Theme semantic ui - Jquery plugin for displaying beautiful messages on your web system</title>
 
 		<link rel="icon" type="image/png" href="icons/favicon.png">
 
 		<link rel="stylesheet" href="css/prism.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/bird-alert.css">
+		<link rel="stylesheet" href="css/bird-alert-semantic-ui.css">
 		<link rel="stylesheet" href="css/doc.css">
 		<link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
 	</head>
@@ -24,44 +24,15 @@
 		<div class="container" id="geral">
 			<div class="row">
 				<div class="col">
-					<h1 class="text-center titlePage">Events</h1>
-					<br>
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<ins class="adsbygoogle"
-					     style="display:block; text-align:center;"
-					     data-ad-layout="in-article"
-					     data-ad-format="fluid"
-					     data-ad-client="ca-pub-8894792596723869"
-					     data-ad-slot="3239538878"></ins>
-					<script>
-					     (adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-					<br>
-					<h2>onShow</h2>
-					<h3><b>Type</b>: Function</h3>
-					<p>Executes a function before displaying the message</p>
-					<p><button type="button" class="btn btn-primary" id="onShow">Example</button></p>
-					<div>
-<pre><code class="language-javascript">var birdAlert = new BirdAlert({
-	onShow: function () {
-		alert('show');
-	}
-});
-</code></pre>
-					</div>
-
-					<h2>onHide</h2>
-					<h3><b>Type</b>: Function</h3>
-					<p>Executes a function after hiding the message</p>
-					<p><button type="button" class="btn btn-primary" id="onHide">Example</button></p>
-					<div>
-<pre><code class="language-javascript">var birdAlert = new BirdAlert({
-	onHide: function () {
-		alert('hide');
-	}
-});
-</code></pre>
-					</div>
+					<h1 class="text-center titlePage">Semantic UI theme</h1>
+					<h2>Examples</h2>
+					<p>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Error</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
+					</p>
+					<p><a href="themes.html">Back to themes</a></p>
 					<br>
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 					<ins class="adsbygoogle"
@@ -85,42 +56,9 @@
         <script type="text/javascript" src="js/prism.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/bird-alert.min.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/theme.js" charset="utf-8"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42464483-5"></script>
-		<script>
-			var birdAlert = new BirdAlert();
-
-			$('#onShow').on('click', function () {
-				birdAlert.setDefaults();
-				birdAlert.set({
-					zIndex: 2100,
-					onShow: function () {
-						alert('show');
-					}
-				});
-				birdAlert.notify({
-					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
-					title: 'onShow', 
-					className: 'info'
-				});
-			});
-
-			$('#onHide').on('click', function () {
-				birdAlert.setDefaults();
-				birdAlert.set({
-					zIndex: 2100,
-					onHide: function () {
-						alert('hide');
-					}
-				});
-				birdAlert.notify({
-					msg: 'Scelerisque in tortor dapibus sed non habitasse dis, nec facilisis eros nec mattis integer.', 
-					title: 'onHide', 
-					className: 'info'
-				});
-			});
-
-		</script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
